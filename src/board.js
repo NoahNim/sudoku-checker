@@ -1,4 +1,6 @@
-
-export class Board {
-  
+export class sudoku {
+  constructor(board){
+    this.board = [[]];
+    // let board = [[], [], [], [], [], [], [], [],[]];
+  }
 }
