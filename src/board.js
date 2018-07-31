@@ -8,12 +8,12 @@ export function sudokuCheckerHorizontal(board){
 
   console.log("Hey");
   console.log(board);
-  for(var i = 0; i <= 8; i++){
+  for(var i = 0; i <= board.length; i++){
     console.log(i);
     for(var j = 0; j <= 8; j++){
-      for (var k = 0; k <= 8; k++) {
+      for (var k = 0; k <= 9; k++) {
         if (k != j){
-          if (board[i][k] == board[i][j]){
+          if (board[i][k] == board[k][j]){
             console.log("FALLLLLLLSE!!!!!");
             return false;
           }
@@ -27,7 +27,7 @@ export function sudokuCheckerHorizontal(board){
 export function sudokuCheckerVertical(board){
   console.log("Ho!");
   console.log(board);
-    for(var i = 0; i <= 8; i++){
+    for(var i = 0; i <= board.length; i++){
       console.log("string");
       for(var j = 0; j <= 8; j++){
         console.log("Joy");
